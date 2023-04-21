@@ -1,6 +1,8 @@
 
 remotes::install_github("bcgov/PEMprepr", build_vignettes = FALSE)
-devtools::load_all("D:\\PEM_DATA\\PEMprepr")
+devtools::load_all("E:\\temp\\PEM_DATA\\PEMmodelr")
+devtools::load_all("E:\\temp\\PEM_DATA\\PEMprepr")
+
 
 # load in library's needed
 
@@ -24,6 +26,7 @@ aoi <- aoi_snap(aoi_raw, "expand")
 
 # write out into the cleaned shapefile location"
 sf::st_write(aoi, file.path(fid$shape_dir_1010[1], "aoi_snapped.gpkg"))
+aoi <- st_read(file.path(fid$shape_dir_1010[1], "aoi_snapped.gpkg")) 
 
 # pull in the raw vector data for the study area. Note this is saved in raw loaction folder
 create_base_vectors(in_aoi = aoi,

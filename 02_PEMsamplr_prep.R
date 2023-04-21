@@ -1,8 +1,8 @@
 
 #remotes::install_github("bcgov/PEMprepr", build_vignettes = TRUE)
-devtools::load_all("D:\\PEM_DATA\\PEMprepr")
-devtools::load_all("D:\\PEM_DATA\\PEMsamplr")
-#devtools::install_github("kdaust/clhs") 
+devtools::load_all("E:\\temp\\PEM_DATA\\PEMmodelr")
+devtools::load_all("E:\\temp\\PEM_DATA\\PEMprepr")
+devtools::install_github("kdaust/clhs") 
 
 library(PEMprepr)
 library(PEMsamplr)
